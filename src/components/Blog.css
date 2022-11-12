@@ -1,0 +1,32 @@
+.blog {
+  width: 300px;
+}
+.blog__button {
+  background-color: transparent;
+  border: none;
+}
+.yellow-star {
+  color: #f0f00b;
+  width: 30px;
+  height: 30px;
+}
+.transparent-star {
+  width: 30px;
+  height: 30px;
+}
+.blog__img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.blog__title {
+  padding: 20px 0;
+}
+.blog__header {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__content {
+  text-align: justify;
+}

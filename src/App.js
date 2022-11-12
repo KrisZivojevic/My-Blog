@@ -1,9 +1,3 @@
-// TODO: 
-// 1. naci 2 svg ikonice (zvezda i obojena zvezda); x
-// 2. srediti container stilizaciju; x
-// 3. naci slike; x
-// 4. section komponentu ubaciti; x
-
 import { useState } from 'react';
 import './App.css';
 import Section from './components/Section';

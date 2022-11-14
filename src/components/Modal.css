@@ -1,0 +1,55 @@
+.blog-modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000042;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.blog-modal__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #f0e3e3;
+  border-radius: 10px;
+  padding: 20px;
+}
+.blog-modal__heading {
+  text-align: center;
+}
+.blog-modal__form > * {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+.blog-modal__controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.blog-modal__controls button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 200ms;
+}
+.blog-modal__create-btn {
+  background-color: #a07787;
+}
+.blog-modal__create-btn:hover {
+  background-color: #664f6b;
+  color: #ffffff;
+}
+.blog-modal__cancel-btn {
+  background-color: #6c6a6a94;
+}
+.blog-modal__cancel-btn:hover {
+  background-color: #1c1b1bc7;
+  color: #ffffff;
+}

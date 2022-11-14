@@ -1,0 +1,14 @@
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms;
+}
+li:hover {
+  background-color: #f0e3e3;
+  box-shadow: 2px 3px 7px -3px rgba(0,0,0,0.3);
+}

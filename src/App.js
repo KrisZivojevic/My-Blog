@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import './App.css';
+import Modal from './components/Modal';
+import Navigation from './components/Navigation';
 import Section from './components/Section';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [blogs, setBlogs] = useState([{
     img: "https://c0.wallpaperflare.com/preview/166/603/738/background-blog-coffee-communication.jpg",
     title: "My First Blog Post",
@@ -24,13 +27,30 @@ function App() {
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
     isFavorite: false
   }
-])
+  ]);
+
+  const handleModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  }
+
+  const addBlog = (modalState) => {
+    setBlogs(blogs => {
+      return [...blogs, modalState]
+    })
+    
+  }
 
   return (
     <div className='app'>
+      <Navigation handleModal={handleModal} />
       <h1 className='heading'>My Blog</h1>
       <Section heading="All Blogs" setBlogs={setBlogs} blogs={blogs} className="container" /> 
       <Section heading="Favorites" setBlogs={setBlogs} blogs={blogs.filter(blog => blog.isFavorite)} className="container" /> 
+      {isModalOpen && <Modal handleCancel={handleCancel} addBlog={addBlog} />}
     </div>
   );
 }

@@ -23,7 +23,7 @@ function App() {
     isFavorite: true
   }, {
     img: "https://live.staticflickr.com/4672/38770037135_780d282e07_b.jpg",
-    title: "My Forth Blog Post",
+    title: "My Fourth Blog Post",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
     isFavorite: false
   }
